@@ -1,15 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
 
+@mixin image {
+  margin-top: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  img {
+    width: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
-    font-family: 'Work Sans', sans-serif;;
+html {
+  font-family: 'Work Sans', sans-serif;
 }
-body{
-margin: 0 3rem;
+body {
+  margin: 0 3rem;
 }
 header {
   display: flex;
@@ -84,7 +100,7 @@ main {
     a {
       text-decoration: none;
       color: lightgray;
-      text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
     }
 
     .article-1 {
@@ -95,19 +111,7 @@ main {
       width: 20rem;
       padding: 8rem 2rem;
       .img-container {
-        margin-top: 2.5rem;
-        width: 2rem;
-        height: 2rem;
-        background-color: rgba(255, 255, 255, 0.3);
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem;
-        border-radius: 50%;
-        img {
-          width: 1.5rem;
-          background-color: rgba(255, 255, 255, 0.6);
-          border-radius: 50%;
-        }
+        @include image();
       }
     }
     .article-2 {
@@ -117,19 +121,7 @@ main {
       height: 30rem;
       width: 20rem;
       .img-container {
-        margin-top: 2.5rem;
-        width: 2rem;
-        height: 2rem;
-        background-color: rgba(255, 255, 255, 0.3);
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem;
-        border-radius: 50%;
-        img {
-          width: 1.5rem;
-          background-color: rgba(255, 255, 255, 0.6);
-          border-radius: 50%;
-        }
+        @include image();
       }
     }
     .article-3 {
@@ -140,19 +132,7 @@ main {
       width: 20rem;
       padding: 8rem 2rem;
       .img-container {
-        margin-top: 2.5rem;
-        width: 2rem;
-        height: 2rem;
-        background-color: rgba(255, 255, 255, 0.3);
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem;
-        border-radius: 50%;
-        img {
-          width: 1.5rem;
-          background-color: rgba(255, 255, 255, 0.6);
-          border-radius: 50%;
-        }
+        @include image();
       }
     }
   }
@@ -166,12 +146,12 @@ footer {
     color: gray;
   }
 }
-@media (max-width:720px){
-header{
+@media (max-width: 720px) {
+  header {
     flex-direction: column;
     align-items: flex-start;
-    div{
-        margin-left: .9rem;
+    div {
+      margin-left: 0.9rem;
     }
-}
+  }
 }
