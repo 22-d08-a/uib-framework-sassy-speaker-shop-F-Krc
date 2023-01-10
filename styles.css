@@ -40,6 +40,10 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
 }
+header nav ul li a:hover {
+  color: darkblue;
+  font-weight: 500;
+}
 
 main {
   margin: 1.5rem 4rem;
@@ -106,10 +110,16 @@ main .cards .article-1 .img-container {
   padding: 0.5rem;
   border-radius: 50%;
 }
+main .cards .article-1 .img-container:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 main .cards .article-1 .img-container img {
   width: 1.5rem;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
+}
+main .cards .article-1 .img-container img:hover {
+  background-color: rgba(255, 255, 255, 0.99);
 }
 main .cards .article-2 {
   background-image: url("./images/room.jpg");
@@ -128,10 +138,16 @@ main .cards .article-2 .img-container {
   padding: 0.5rem;
   border-radius: 50%;
 }
+main .cards .article-2 .img-container:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 main .cards .article-2 .img-container img {
   width: 1.5rem;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
+}
+main .cards .article-2 .img-container img:hover {
+  background-color: rgba(255, 255, 255, 0.99);
 }
 main .cards .article-3 {
   background-image: url("./images/black-white.jpg");
@@ -151,10 +167,16 @@ main .cards .article-3 .img-container {
   padding: 0.5rem;
   border-radius: 50%;
 }
+main .cards .article-3 .img-container:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 main .cards .article-3 .img-container img {
   width: 1.5rem;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
+}
+main .cards .article-3 .img-container img:hover {
+  background-color: rgba(255, 255, 255, 0.99);
 }
 
 footer {
