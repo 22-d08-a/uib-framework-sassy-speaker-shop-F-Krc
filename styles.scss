@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+    font-family: 'Work Sans', sans-serif;;
+}
+body{
+margin: 0 3rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 4rem;
+  div {
+    display: flex;
+    align-items: center;
+    img {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1rem;
+      color: black;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      margin-right: 3rem;
+      li {
+        padding: 1rem;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+main {
+  margin: 1.5rem 4rem;
+  .hero {
+    margin-top: 2rem;
+    h1 {
+      font-size: 2rem;
+    }
+    .intro {
+      margin-top: 2rem;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      height: 3rem;
+      width: 18rem;
+      margin-top: 2rem;
+      padding: 0.6rem;
+      background-color: black;
+      a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        display: inline-flex;
+        align-items: center;
+        img {
+          width: 1.5rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+
+    a {
+      text-decoration: none;
+      color: lightgray;
+      text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .article-1 {
+      background-image: url('./images/white-box.jpg');
+      background-position: center;
+      background-size: cover;
+      height: 30rem;
+      width: 20rem;
+      padding: 8rem 2rem;
+      .img-container {
+        margin-top: 2.5rem;
+        width: 2rem;
+        height: 2rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        border-radius: 50%;
+        img {
+          width: 1.5rem;
+          background-color: rgba(255, 255, 255, 0.6);
+          border-radius: 50%;
+        }
+      }
+    }
+    .article-2 {
+      background-image: url('./images/room.jpg');
+      background-size: cover;
+      padding: 8rem 2rem;
+      height: 30rem;
+      width: 20rem;
+      .img-container {
+        margin-top: 2.5rem;
+        width: 2rem;
+        height: 2rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        border-radius: 50%;
+        img {
+          width: 1.5rem;
+          background-color: rgba(255, 255, 255, 0.6);
+          border-radius: 50%;
+        }
+      }
+    }
+    .article-3 {
+      background-image: url('./images/black-white.jpg');
+      background-position: center;
+      background-size: cover;
+      height: 30rem;
+      width: 20rem;
+      padding: 8rem 2rem;
+      .img-container {
+        margin-top: 2.5rem;
+        width: 2rem;
+        height: 2rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        border-radius: 50%;
+        img {
+          width: 1.5rem;
+          background-color: rgba(255, 255, 255, 0.6);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  height: 2rem;
+  p {
+    color: gray;
+  }
+}
+@media (max-width:720px){
+header{
+    flex-direction: column;
+    align-items: flex-start;
+    div{
+        margin-left: .9rem;
+    }
+}
+}
