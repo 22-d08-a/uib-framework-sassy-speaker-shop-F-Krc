@@ -114,9 +114,9 @@ main .cards .article-1 .img-container img {
 main .cards .article-2 {
   background-image: url("./images/room.jpg");
   background-size: cover;
-  padding: 8rem 2rem;
   height: 30rem;
   width: 20rem;
+  padding: 8rem 2rem;
 }
 main .cards .article-2 .img-container {
   margin-top: 2.5rem;

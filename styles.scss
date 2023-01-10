@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
 
-@mixin image {
+@mixin image() {
   margin-top: 2.5rem;
   width: 2rem;
   height: 2rem;
@@ -14,6 +14,12 @@
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
   }
+}
+@mixin image-size() {
+  background-size: cover;
+  height: 30rem;
+  width: 20rem;
+  padding: 8rem 2rem;
 }
 
 * {
@@ -106,20 +112,14 @@ main {
     .article-1 {
       background-image: url('./images/white-box.jpg');
       background-position: center;
-      background-size: cover;
-      height: 30rem;
-      width: 20rem;
-      padding: 8rem 2rem;
+      @include image-size();
       .img-container {
         @include image();
       }
     }
     .article-2 {
       background-image: url('./images/room.jpg');
-      background-size: cover;
-      padding: 8rem 2rem;
-      height: 30rem;
-      width: 20rem;
+      @include image-size();
       .img-container {
         @include image();
       }
@@ -127,10 +127,7 @@ main {
     .article-3 {
       background-image: url('./images/black-white.jpg');
       background-position: center;
-      background-size: cover;
-      height: 30rem;
-      width: 20rem;
-      padding: 8rem 2rem;
+      @include image-size();
       .img-container {
         @include image();
       }
